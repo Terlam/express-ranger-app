@@ -1,0 +1,16 @@
+<%- include('../partials/header', {title: ranger.color + " ranger"})  %> 
+
+<div class="d-flex container">
+    <div class="mx-auto">
+        <h1><%= ranger.color %> ranger!</h1>
+        <p>Ivan Ooze is back at it again!</p>
+        <p>Collect the <%= ranger.color %> ranger to defeat the Ooze! </p>
+        <img src="/images/<%= ranger.color %>.jpg"  alt="ranger image">
+
+        <% if (ranger.color == 'green') { %>
+         <p>Call the DragonZord!!!</p>
+        <% } %>
+    </div>
+</div>
+
+<%- include('../partials/footer')  %> 
